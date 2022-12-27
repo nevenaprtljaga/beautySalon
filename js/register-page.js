@@ -21,6 +21,6 @@ function register(){
     };
     existingUsers.push(newUser);
     localStorage.setItem("users", JSON.stringify(existingUsers));
-    console.log(localStorage.getItem('users'));
+    console.log(localStorage.getItem("users"));
     //window.location.href="../html/home.html";
 }
