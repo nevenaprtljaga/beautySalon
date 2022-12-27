@@ -3,7 +3,9 @@
     <head> 
         <title>Log in</title>
         <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/login-page.js"></script>
+        <script defer src="../js/register-page.js"></script>
+        <script type="text/javascript" 
+        src="../js/db.js"></script>
     </head>
     <body>
         <div class="loginPage">
@@ -13,8 +15,10 @@
                 <label>Password:</label><br>
                 <input type="password" id="passwordInput"><br>
                 <label>Role:</label><br>
-                <input type="text" id="roleInput"><br>  
-                <button type="button" id="registerButton">Button</button>
+                <select name="role-names" id="role-names">
+                    <option value="role">Choose:</option>
+                </select><br>
+                <button type="button" id="registerButton">Register</button>
                 <button>Reset</button>
                 <label onclick="window.location.href = 'home.html'" style="cursor:pointer">Have an account? Sign in</label>
             </form>

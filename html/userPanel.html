@@ -1,1 +1,24 @@
-hiiii
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>User panel</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script defer src="../js/user-panel.js"></script>
+        <script type="text/javascript" 
+        src="../js/db.js"></script>
+    </head>
+    <body>
+        <form class="login-form">
+            <label>Choose a salon:</label><br>
+            <select name="salon-names" id="salon-names">
+                <option value="diva">Choose:</option>
+            </select><br>
+            <label>Choose a treatment:</label><br>
+            <select name="treatment-names" id="treatment-names">
+                <option value="haircut">Choose:</option>
+            </select><br>
+            <button type="button" id="reserveButton">Make an appointment</button>
+            <button>Reset</button>
+        </form>
+    </body>
+</html>
