@@ -9,7 +9,7 @@ for (let i = 0; i < treatmentNames.length; ++i) {
 }
 
 //make an appointment
-
+//odabir termina datuma vremena
 document.getElementById("reserveButton").addEventListener("click", makeAp);  
 
 function makeAp(){
