@@ -21,24 +21,32 @@ document.getElementById("addSalonButton").addEventListener("click", addSalon);
 function addSalon(){
     let salonName = document.getElementById("salonNameInput").value;
     let salonAddress = document.getElementById("salonAddressInput").value;
-
+    let salonTreatments = document.getElementById("salonTreatmentsInput").value;
     let existingSalons = JSON.parse(localStorage.getItem("salons")) || [];
 
-    let newSalon = {
-        "name": salonName,
-        "address" : salonAddress
-    };
+    
+    let arrTreatments = salonTreatments.split(",");
 
-    if(!existingUsers.some(user => user["username"] === username)){
-        existingUsers.push(newUser);
-        console.log("account created");
-        localStorage.setItem("users", JSON.stringify(existingUsers));
-        console.log(localStorage.getItem("users"));
-        alert("Successful! You can now log in.");
-        window.location.href="../html/home.html";
+
+    let newSalon = {
+        name: salonName,
+        address : salonAddress,
+        treatments : []
+    };
+    
+
+    for(let i = 0; i < arrTreatments.length; i+=2){
+        newSalon.treatments.push({name: arrTreatments[i], price: arrTreatments[i+1]});
+    }
+    
+  
+
+    if(!existingSalons.some(salon => salon["name"] === salonName)){
+        existingSalons.push(newSalon);
+        localStorage.setItem("salons", JSON.stringify(existingSalons));
+        console.log(localStorage.getItem("salons"));
     }else{
-        alert("Username exists in database.");
-        console.log(localStorage.getItem("users"));
+        alert("Salon name exists in database.");
     }
 }
 
