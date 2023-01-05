@@ -6,16 +6,17 @@
         <script defer src="../js/login-page.js"></script>
         <script type="text/javascript" 
         src="../js/db.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="loginPage">
+        <div class="container-fluid text-center">
             <form class="login-form">
-                <label>Username:</label><br>
+                <label >Username:</label><br>
                 <input type="text" id="usernameInput"><br>
                 <label>Password:</label><br>
                 <input type="password" id="passwordInput"><br>
-                <button type="button" id="loginButton">Log in</button>
-                <button>Reset</button>
+                <button type="button" id="loginButton">Log in</button><br>  
+                <button>Reset</button><br>
                 <label onclick="window.location.href = 'register.html'" style="cursor:pointer">Don't have an account? Sign up</label>
             </form>
         </div>

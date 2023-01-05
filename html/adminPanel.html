@@ -6,9 +6,40 @@
         <script defer src="../js/admin-panel.js"></script>
         <script type="text/javascript" 
         src="../js/db.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </script>
     </head>
     <body>
-        
+        <div class="container-fluid bg-3 text-center">
+            <h3>Admin panel</h3>
+            <div class="row">
+              <div class="col-sm-4">
+                <p>Create salons</p>
+                <table class="table" border="1">
+                    <thead>
+                      <tr>
+                        <th> Salon name </th>
+                        <th> Address </th>
+                        <th> Treatments </th>
+                      </tr>
+                    </thead>
+                    <tbody id="body">
+                    </tbody>
+                </table><br>
+                <label >Salon name:</label><br>
+                <input type="text" id="salonNameInput"><br>
+                <label>Salon address:</label><br>
+                <input type="text" id="salonAddressInput"><br>
+                <button type="button" id="addSalonButton">Add a new salon</button><br>  
+                <button>Reset</button><br>
+              </div>    
+              <div class="col-sm-4">
+                <p>Create, update, delete treatments</p>
+              </div>
+              <div class="col-sm-4">
+                <p>Confirm an appointment</p>
+              </div>
+            </div>
+          </div>
     </body>
 </html>
