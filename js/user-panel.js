@@ -13,11 +13,18 @@ for (let i = 0; i < salonNames.length; ++i) {
     salonNamesDrop[salonNamesDrop.length] = new Option(salonNames[i], salonNames[i]);
 }
 
-let treatmentNamesDrop = document.getElementById("treatment-names");
-for (let i = 0; i < treatmentNames.length; ++i) {
-    treatmentNamesDrop[treatmentNamesDrop.length] = new Option(treatmentNames[i], treatmentNames[i]);
-}
+//treba da cita tretmane iz baze salona
 
+//dodaj cenu pored tretmana!!!
+let treatmentNamesDrop = document.getElementById("treatment-names");
+function fillTreatments(){
+    let arrSalon = data.find(element => element.name == salonNamesDrop.value);
+    let arrtre = arrSalon.treatments;
+    for (a in treatmentNamesDrop.options) { treatmentNamesDrop.options.remove(0); }
+    for (let i = 0; i < treatmentNames.length; ++i) {
+        treatmentNamesDrop[treatmentNamesDrop.length] = new Option(arrtre[i].name, arrtre[i].name);
+    }
+}
 document.getElementById("reserveButton").addEventListener("click", makeAp);
 
 
