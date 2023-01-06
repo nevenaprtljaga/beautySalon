@@ -2,3 +2,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
+textarea{
+  height: 100px;
+  min-width: 200px;
+}
