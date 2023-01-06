@@ -1,14 +1,14 @@
 let users = [{
-    "id" : 0,
-    "username" : "nevena",
-    "password" : "neve",
-    "role" : "admin"
+    "id": 0,
+    "username": "nevena",
+    "password": "neve",
+    "role": "admin"
 },
 {
-    "id" : 1,
-    "username" : "clarivate",
-    "password" : "clar",
-    "role" : "customer"
+    "id": 1,
+    "username": "clarivate",
+    "password": "clar",
+    "role": "customer"
 }];
 
 
@@ -18,42 +18,42 @@ let users = [{
 
 
 let salons = [{
-    "name" : "Diva",
-    "address" : "blabla",
-    "treatments" : [{
-        "name" : "manicure",
-        "price" : "3000"
+    "name": "Diva",
+    "address": "blabla",
+    "treatments": [{
+        "name": "manicure",
+        "price": "3000"
     },
     {
-        "name" : "haircut",
-        "price" : "2000"
+        "name": "haircut",
+        "price": "2000"
     }
     ]
-    
+
 },
 {
-    "name" : "Lepa Svaki Dan",
-    "address" : "asasa",
-    "treatments" : [{
-        "name" : "manicure",
-        "price" : "1111"
+    "name": "Lepa Svaki Dan",
+    "address": "asasa",
+    "treatments": [{
+        "name": "manicure",
+        "price": "1111"
     },
     {
-        "name" : "haircut",
-        "price" : "2222"
+        "name": "haircut",
+        "price": "2222"
     }
     ]
 },
 {
-    "name" : "Lola",
-    "address" : "ajajaj",
-    "treatments" : [{
-        "name" : "manicure",
-        "price" : "234"
+    "name": "Lola",
+    "address": "ajajaj",
+    "treatments": [{
+        "name": "manicure",
+        "price": "234"
     },
     {
-        "name" : "haircut",
-        "price" : "3456"
+        "name": "haircut",
+        "price": "3456"
     }
     ]
 }];
