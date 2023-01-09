@@ -35,13 +35,14 @@ function makeAp() {
     if (localStorage.getItem("currentUser") == "" || salonNamesDrop.value == "choose" || treatmentNamesDrop.value == "choose" || date == "" || time == "") {
         alert("You need to enter the information!");
     } else {
-        let appo = [{
+        let appo = {
+            "id": existingAppo.length + 0,
             "username": localStorage.getItem("currentUser"),
             "salonName": salonNamesDrop.value,
             "treatmentName": treatmentNamesDrop.value,
             "date": date,
             "time": time
-        }]
+        };
         existingAppo.push(appo);
         localStorage.setItem("appointments", JSON.stringify(existingAppo));
         alert("Sucessful appointment!");

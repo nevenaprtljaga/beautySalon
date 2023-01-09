@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <title>Log in</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/register-page.js"></script>
-        <script type="text/javascript" 
-        src="../js/db.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    </head>
-    <body>
-        <div class="container-fluid text-center">
-            <form class="login-form">
-                <label>Username:</label><br>
-                <input type="text" id="usernameInput"><br>
-                <label>Password:</label><br>
-                <input type="password" id="passwordInput"><br>
-                <label>Role:</label><br>
-                <select name="role-names" id="role-names">
-                    <option value="role">Choose:</option>
-                </select><br>
-                <button type="button" id="registerButton">Register</button><br>
-                <button>Reset</button><br>
-                <label onclick="window.location.href = 'home.html'" style="cursor:pointer">Have an account? Sign in</label>
-            </form>
-        </div>
-    </body>
+<html>
+
+<head>
+    <title>Log in</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/register-page.js"></script>
+    <script type="text/javascript" src="../js/db.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <form class="login-form">
+            <label>Username:</label><br>
+            <input type="text" id="usernameInput"><br>
+            <label>Password:</label><br>
+            <input type="password" id="passwordInput"><br>
+            <label>Role:</label><br>
+            <select name="role-names" id="role-names">
+                <option value="role">Choose:</option>
+            </select><br>
+            <button type="button" id="registerButton">Register</button><br>
+            <button>Reset</button><br>
+            <label onclick="window.location.href = 'home.html'" style="cursor:pointer">Have an account? Sign in</label>
+        </form>
+    </div>
+</body>
+
 </html>

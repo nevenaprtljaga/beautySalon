@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <title>User panel</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/user-panel.js"></script>
-        <script type="text/javascript" 
-        src="../js/db.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    </head>
-    <body>
-        <form class="container-fluid text-center">
-            <label>Choose a salon:</label><br>
-            <select name="salon-names" id="salon-names" onchange="fillTreatments()">
-                <option value="choose">Choose:</option>
-            </select><br>
-            <label>Choose a treatment:</label><br>
-            <select name="treatment-names" id="treatment-names">
-                <option value="choose">Choose:</option>
-            </select><br>
-            <label for="date">Date:</label><br>
-            <input type="date" id="date"><br>
-            <label for="time">Time:</label><br>
-            <select id="time">
-                <option value="9">9:00</option>
-                <option value="10">10:00</option>
-                <option value="11">11:00</option>
-                <option value="12">12:00</option>
-                <option value="13">13:00</option>
-                <option value="14">14:00</option>
-                <option value="15">15:00</option>
-                <option value="16">16:00</option>
-                <option value="17">17:00</option>
-                <option value="18">18:00</option>
-                <option value="19">19:00</option>
-                <option value="20">20:00</option>
-                <option value="21">21:00</option>
-            </select><br>
-            <button type="button" id="reserveButton">Make an appointment</button>
-            <button>Reset</button>
-        </form>
-    </body>
+<html>
+
+<head>
+    <title>User panel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/user-panel.js"></script>
+    <script type="text/javascript" src="../js/db.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form class="container-fluid text-center">
+        <label>Choose a salon:</label><br>
+        <select name="salon-names" id="salon-names" onchange="fillTreatments()">
+            <option value="choose">Choose:</option>
+        </select><br>
+        <label>Choose a treatment:</label><br>
+        <select name="treatment-names" id="treatment-names">
+            <option value="choose">Choose:</option>
+        </select><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date"><br>
+        <label for="time">Time:</label><br>
+        <select id="time">
+            <option value="9">9:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+        </select><br>
+        <button type="button" id="reserveButton">Make an appointment</button>
+        <button>Reset</button>
+    </form>
+</body>
+
 </html>

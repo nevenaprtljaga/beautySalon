@@ -1,47 +1,81 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <title>Admin panel</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/admin-panel.js"></script>
-        <script type="text/javascript" 
-        src="../js/db.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<html>
+
+<head>
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/admin-panel.js"></script>
+    <script type="text/javascript" src="../js/db.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </script>
-    </head>
-    <body>
-        <div class="container-fluid bg-3 text-center">
-            <h3>Admin panel</h3>
-            <div class="row">
-              <div class="col-sm-4">
+</head>
+
+<body>
+    <div class="container-fluid bg-3 text-center">
+        <h3>Admin panel</h3>
+        <div class="row">
+            <div class="col-sm-4">
                 <p>Create salons</p>
                 <table class="table" border="1">
                     <thead>
-                      <tr>
-                        <th> Salon name </th>
-                        <th> Address </th>
-                        <th> Treatments </th>
-                      </tr>
+                        <tr>
+                            <th> Salon name </th>
+                            <th> Address </th>
+                            <th> Treatments </th>
+                        </tr>
                     </thead>
-                    <tbody id="body">
+                    <tbody id="body1">
                     </tbody>
                 </table><br>
-                <label >Salon name:</label><br>
+                <label>Salon name:</label><br>
                 <input type="text" id="salonNameInput"><br>
                 <label>Salon address:</label><br>
                 <input type="text" id="salonAddressInput"><br>
                 <label>Treatments:</label><br>
-                <textarea type="text" id="salonTreatmentsInput" placeholder="Input in name,price,name,price format"></textarea><br>
-                <button type="button" id="addSalonButton">Add a new salon</button><br>  
+                <textarea type="text" id="salonTreatmentsInput"
+                    placeholder="Input in name,price,name,price format"></textarea><br>
+                <button type="button" id="addSalonButton">Add a new salon</button><br>
                 <button>Reset</button><br>
-              </div>    
-              <div class="col-sm-4">
-                <p>Create, update, delete users???</p>
-              </div>
-              <div class="col-sm-4">
-                <p>Confirm an appointment</p>
-              </div>
             </div>
-          </div>
-    </body>
+            <div class="col-sm-4">
+                <p>Change role of user</p>
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> Username </th>
+                            <th> Role </th>
+                        </tr>
+                    </thead>
+                    <tbody id="body2">
+                    </tbody>
+                </table><br>
+                <label>Input user ID to change role: </label>
+                <input type="text" id="inputIdUser">
+                <button type="submit" id="changeRoleButton">Change role</button>
+            </div>
+            <div class="col-sm-4">
+                <p>Remove invalid appointments</p>
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th> Treatment ID </th>
+                            <th> Username </th>
+                            <th> Salon name </th>
+                            <th> Treatment </th>
+                            <th> Date </th>
+                            <th> time </th>
+                        </tr>
+                    </thead>
+                    <tbody id="body3">
+                    </tbody>
+                </table><br>
+                <label>Input treatment ID to delete:</label>
+                <input type="text" id="inputIdAppo">
+                <button type="submit" id="deleteAppoButton">Delete  </button>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

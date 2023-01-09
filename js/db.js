@@ -12,11 +12,6 @@ let users = [{
 }];
 
 
-//localStorage.clear(); //odkomentarisi za ciscenje storage, jednom pokreni i ponovo zakomentarisi
-
-//localStorage.setItem("users", JSON.stringify(users)); //odkomentarisi, jednom pokreni i zakomentarisi, pocetni korisnici su dodati (ili preko stranice za registraciju dodati korisnike)
-
-
 let salons = [{
     "name": "Diva",
     "address": "blabla",
@@ -58,8 +53,11 @@ let salons = [{
     ]
 }];
 
-//localStorage.setItem("salons", JSON.stringify(salons));
 
+//localStorage.clear(); //odkomentarisi za ciscenje storage, jednom pokreni i ponovo zakomentarisi
+
+//localStorage.setItem("users", JSON.stringify(users)); //odkomentarisi, jednom pokreni i zakomentarisi, pocetni korisnici su dodati (ili preko stranice za registraciju dodati korisnike)
+//localStorage.setItem("salons", JSON.stringify(salons));
 let treatmentNames = ["Manicure", "Laser treatment", "Haircut", "Facemask"];
 
 let roleNames = ["admin", "customer"];
