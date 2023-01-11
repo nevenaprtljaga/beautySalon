@@ -1,6 +1,3 @@
-// console.log(localStorage.getItem("users"));
-//console.log(localStorage.getItem("appointments"));
-
 //show data from salons
 let data = JSON.parse(localStorage.getItem("salons"));
 
@@ -115,7 +112,7 @@ function changeRole() {
 
 }
 
-
+//delete appointment by id
 document.getElementById("deleteAppoButton").addEventListener("click", deleteAppointment);
 
 function deleteAppointment() {
